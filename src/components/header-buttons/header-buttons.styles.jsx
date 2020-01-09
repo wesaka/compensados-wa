@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-self: flex-end;
-  margin-right: 20px;
   margin-bottom: auto;
 `;
 
@@ -18,12 +18,15 @@ export const NavigationAccent = styled.div`
   margin-bottom: 55px;
 `;
 
-export const NavigationButton = styled.div` 
+export const NavigationButton = styled(Link)` 
   margin-left: 15px;
   margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
   
   &:hover {
     cursor: pointer;
+    color: inherit;
   }
   
   &:hover ${NavigationAccent}{

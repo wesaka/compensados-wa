@@ -3,19 +3,19 @@ import {NavigationAccent, NavigationButton, HeaderButtonsContainer} from "../hea
 
 const HeaderButtonsComponent = () => (
     <HeaderButtonsContainer>
-        <NavigationButton>
+        <NavigationButton to='/'>
             <NavigationAccent/>
             Home
         </NavigationButton>
-        <NavigationButton>
+        <NavigationButton to='/produtos'>
             <NavigationAccent/>
             Produtos
         </NavigationButton>
-        <NavigationButton>
+        <NavigationButton to='/empresa'>
             <NavigationAccent/>
             Empresa
         </NavigationButton>
-        <NavigationButton>
+        <NavigationButton to='/contato'>
             <NavigationAccent/>
             Contato
         </NavigationButton>

@@ -8,18 +8,21 @@ export const GreenHeader = styled.div`
   vertical-align: center;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 `;
 
 export const TextoContato = styled.span`
-  flex-grow: 2;
+  flex-grow: 1;
   margin: 10px 0;
   color: white;
 `;
 
 export const FacebookButton = styled(FontAwesomeIcon)`
+  display: block;
   height: 24px;
   width: 24px;
   flex-grow: 1;
+  flex-basis: auto;
   margin: auto 0;
   color: white;
   
@@ -36,7 +39,7 @@ export const NavigationHeader = styled.header`
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     box-sizing: border-box;
     
     ${({topLen}) => topLen && `

@@ -3,11 +3,9 @@ import React from "react";
 import './home.styles.scss'
 
 import { Carousel } from "antd";
-import HeaderComponent from "../../components/header/header.component";
 
-const Home = () => (
+const HomePage = () => (
     <div>
-        <HeaderComponent/>
         <Carousel autoplay>
             <div className='primeiro-slide'>
                 <span className='tagline'>MAIS DE 10 ANOS DE EXPERIÊNCIA</span>
@@ -24,4 +22,4 @@ const Home = () => (
     </div>
 );
 
-export default Home;
+export default HomePage;
