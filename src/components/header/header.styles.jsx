@@ -31,9 +31,10 @@ export const FacebookButton = styled(FontAwesomeIcon)`
 
 export const NavigationHeader = styled.header`
     width: 100%;
+    height: 130px;
     background-color: #eee;
-    vertical-align: center;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
@@ -42,7 +43,7 @@ export const NavigationHeader = styled.header`
         position: fixed;
         top: 0;
         background-color: white;
-        box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1em rgba(0, 0, 0, .5);
         z-index: 1000;
     `}
 `;

@@ -5,6 +5,7 @@ export const HeaderButtonsContainer = styled.div`
   flex-direction: row;
   align-self: flex-end;
   margin-right: 20px;
+  margin-bottom: auto;
 `;
 
 export const NavigationAccent = styled.div`
@@ -14,13 +15,12 @@ export const NavigationAccent = styled.div`
   opacity: 0;
   margin-top: 2px;
   z-index: 1;
-  margin-bottom: 18px;
+  margin-bottom: 55px;
 `;
 
 export const NavigationButton = styled.div` 
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
   
   &:hover {
     cursor: pointer;

@@ -8,6 +8,7 @@ import {
 
 import {faFacebookSquare} from "@fortawesome/free-brands-svg-icons";
 import HeaderButtonsComponent from "../header-buttons/header-buttons.component";
+import LogoComponent from "../logo/logo.component";
 
 
 class HeaderComponent extends Component {
@@ -47,7 +48,7 @@ class HeaderComponent extends Component {
                     <FacebookButton icon={faFacebookSquare}/>
                 </GreenHeader>
                 <NavigationHeader topLen={this.state.topLen}>
-                    Teste teste teste
+                    <LogoComponent/>
                     <HeaderButtonsComponent/>
                 </NavigationHeader>
             </div>
