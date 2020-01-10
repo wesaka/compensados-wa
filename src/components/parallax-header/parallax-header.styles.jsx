@@ -7,7 +7,7 @@ export const ParallaxBaseDiv = styled.div`
     width: 100%;
     z-index: -1;
     height: 100%;
-    background: url("/images/produto.jpg") no-repeat center;
+    background: url(${({background}) => background}) no-repeat center;
 `;
 
 export const ParallaxTitle = styled.h1`

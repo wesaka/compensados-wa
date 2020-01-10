@@ -1,10 +1,10 @@
 import React from "react";
 import {ParallaxBaseDiv, ParallaxTitle, ParallaxViewer} from "./parallax-header.styles";
 
-const ParallaxHeaderComponent = () => (
+const ParallaxHeaderComponent = ({background, title}) => (
     <div>
-        <ParallaxBaseDiv>
-            <ParallaxTitle>Produtos</ParallaxTitle>
+        <ParallaxBaseDiv background={background}>
+            <ParallaxTitle>{title}</ParallaxTitle>
         </ParallaxBaseDiv>
         <ParallaxViewer>
         </ParallaxViewer>

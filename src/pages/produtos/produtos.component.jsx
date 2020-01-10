@@ -8,10 +8,9 @@ const data = require('../../assets/produtosData');
 
 const ProdutosPage = () => (
     <div>
-        <ParallaxHeaderComponent/>
+        <ParallaxHeaderComponent title='Produtos' background='/images/produto.jpg'/>
         <ProdutosPageContainer>
             {data.map(item => (<ProdutoComponent {...item}/>))}
-
         </ProdutosPageContainer>
     </div>
 );
