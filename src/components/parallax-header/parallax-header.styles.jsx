@@ -12,7 +12,7 @@ export const ParallaxBaseDiv = styled.div`
 
 export const ParallaxTitle = styled.h1`
     position: fixed;
-    top: 40vh;
+    top: 38%;
     left: 20vw;
     font-size: 60px;
     letter-spacing: .1em;
@@ -23,9 +23,10 @@ export const ParallaxTitle = styled.h1`
 export const ParallaxViewer = styled.div`
     position: relative;
     top: 0;
-    background: transparent;
+    background: transparent !important;
     width: 100%;
     height: 50vh;
+    z-index: 5;
 `;
 
 export const TestDiv = styled.div`

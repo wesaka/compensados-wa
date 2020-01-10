@@ -15,7 +15,7 @@ const FooterComponent = () => (
             {footerContent.map(item => <FooterItem key={uid(item)} {...item}/>)}
         </FooterItemsContainer>
         <FooterBottomContainer>
-            <div><FontAwesomeIcon icon={faCopyright}/> Compensados e Laminados W.A. LTDA 2020</div>
+            <div><FontAwesomeIcon icon={faCopyright}/> Compensados e Laminados W.A. LTDA {new Date().getFullYear()}</div>
             <div>Feito com <FontAwesomeIcon icon={faReact}/> por A. Wesley</div>
         </FooterBottomContainer>
     </div>

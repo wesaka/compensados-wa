@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Lâminas de Pinus e Eucalipto",
+    "description": "Lâminas de Toras de Pinus Cozidas e Eucaliptos Laminados nas Bitolas de 1,0 a 3,9 mm.",
+    "characteristics": [
+      "Comprimento: 1.150 a 2.600mm.", "Larguras: de 200 a 1.950mm."
+    ],
+    "imgUrl": "http://compensadoswa.com.br/wp-content/uploads/2015/04/lamina-madeira.jpg",
+    "imgLeft": true
+  },
+  {
+    "title": "Compensados Plastificados",
+    "description": "Compensado naval plastificado, revestido com filme fenólico, produzido com colagem a prova d’água. Oferece garantia de grande número de reutilizações, desde que seguidas as instruções de uso e armazenamento.",
+    "characteristics": [
+      "É utilizado na construção civil como fôrmas para concreto aparente, pilares, lages e vigas.", "Trabalhamos com as medidas de 2,20m x 1,10m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 10mm à 27mm.", "Garantimos a reutilização desde que se obedeçam aos critérios adequados conforme as normas técnicas da construção civil da ABNT."
+    ],
+    "imgUrl": "http://compensadoswa.com.br/wp-content/uploads/2015/04/compensado_plastificado_atriunfo-2.jpg",
+    "imgLeft": false
+  },
+  {
+    "title": "Compensados Plastificados AntiDerrapantes",
+    "description": "Compensado naval plastificado produzido com colagem a prova d’água e uma das faces com textura anti derrapante.",
+    "characteristics": [
+      "Palcos, assoalhos para containers, passarelas, andaimes e pisos em geral.", "Trabalhamos com as medidas de 2,20m x 1,10m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 10mm à 27mm."
+    ],
+    "imgUrl": "http://compensadoswa.com.br/wp-content/uploads/2015/04/antiderrapante2.jpg",
+    "imgLeft": true
+  },
+  {
+    "title": "Compensados Resinados",
+    "description": "Compensado naval produzido com colagem a prova d’água, superfície tingida com tinta.",
+    "characteristics": [
+      "É utilizado na construção civil como tapumes, bandejões, fôrmas de concreto não aparente e canteiro de obra.", "Trabalhamos com as medidas de 2,20m x 1,10m, 2,20m x 1,60m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 3,7mm à 27mm."
+    ],
+    "imgUrl": "http://compensadoswa.com.br/wp-content/uploads/2015/04/compensado-resinado.jpg",
+    "imgLeft": false
+  },
+  {
+    "title": "Compensados para Embalagens",
+    "description": "Compensados multilaminado, colado com laminas de madeira selecionada, sobrepostas em sentido alternado uma a uma; capa (lâminas externas) e miolo (lâminas internas) de lâminas torneadas, com capas no mesmo sentido, prensada a uma temperatura alta.",
+    "characteristics": [
+      "É utilizado para embalagens, colchões, mezaninos, divisórias, prateleiras, pallets, entre outros.", "Trabalhamos com as medidas de 2,20m x 1,10m, 2,20m x 1,60m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 3,7mm à 27mm."
+    ],
+    "imgUrl": "http://compensadoswa.com.br/wp-content/uploads/2015/04/compensados-embalagens.jpg",
+    "imgLeft": true
+  },
+  {
+    "title": "Painel Mezanino Cimentício",
+    "description": "Produto de alta resistência, produzido com painéis OSB, feita com colagem a prova d’água. Revestido com placa cimentícia em ambos os lados.",
+    "characteristics": [
+      "Trabalhamos com as medidas de 1,20m x 2,40m e 1,20m x 2,50m, nas espessuras de 23mm ou 40mm.", "Produto com garantia de qualidade.", "É utilizado para construção civil em geral."
+    ],
+    "imgUrl": "http://compensadoswa.com.br/wp-content/uploads/2015/04/mezanino-cimenticio.jpg",
+    "imgLeft": false
+  }
+]
