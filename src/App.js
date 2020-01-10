@@ -11,6 +11,7 @@ import HomePage from "./pages/home/home.component";
 import ProdutosPage from "./pages/produtos/produtos.component";
 import EmpresaPage from "./pages/empresa/empresa.component";
 import ContatoPage from "./pages/contato/contato.component";
+import FooterComponent from "./components/footer/footer.component";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route exact path='/empresa' component={EmpresaPage}/>
             <Route exact path='/contato' component={ContatoPage}/>
         </Switch>
+        <FooterComponent/>
     </div>
   );
 }

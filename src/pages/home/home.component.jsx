@@ -5,6 +5,7 @@ import SliderComponent from "../../components/slider/slider.component";
 import FillerComponent from "../../components/filler/filler.component";
 
 import { fillerPrincipios, fillerSegmentos } from "../../assets/fillerContent";
+import OrcamentoComponent from "../../components/orcamento/orcamento.component";
 
 const HomePage = () => (
     <div>
@@ -25,6 +26,9 @@ const HomePage = () => (
         <Spacer/>
         <FillerComponent color='white' title='Princípios' content={fillerPrincipios}/>
         <FillerComponent color='antiquewhite' title='Segmentos' content={fillerSegmentos}/>
+        <OrcamentoComponent/>
+        <Spacer/>
+
     </div>
 );
 

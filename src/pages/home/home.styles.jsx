@@ -21,7 +21,7 @@ export const Slide = styled.div`
     transform: translateY(-50%);
 `;
 
-export const Tagline = styled.div`
+export const Tagline = styled.h1`
     font-size: 22px;
     flex-grow: 1;
     margin: 10px 0;

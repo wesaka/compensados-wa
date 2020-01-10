@@ -1,4 +1,6 @@
 import React from "react";
+import { uid } from "react-uid";
+
 import FillerItemComponent from "../filler-item/filler-item.component";
 import {FillerBackground, FillerContainer, FillerSeparator, FillerTitle} from "./filler.styles";
 
@@ -8,11 +10,12 @@ const FillerComponent = ({title, content, color}) => (
         <FillerSeparator/>
         <FillerContainer>
         {
-            content.map(({imgUrl, title, paragraph}) => (
+            content.map((item) => (
                 <FillerItemComponent
-                    imgUrl={imgUrl}
-                    title={title}
-                    paragraph={paragraph}/>
+                    key={uid(item)}
+                    imgUrl={item.imgUrl}
+                    title={item.title}
+                    paragraph={item.paragraph}/>
             ))
         }
         </FillerContainer>

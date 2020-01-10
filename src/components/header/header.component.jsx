@@ -10,6 +10,8 @@ import {faFacebookSquare} from "@fortawesome/free-brands-svg-icons";
 import HeaderButtonsComponent from "../header-buttons/header-buttons.component";
 import LogoComponent from "../logo/logo.component";
 
+import {telefone, celular, email} from '../../assets/data';
+
 
 class HeaderComponent extends Component {
     constructor(props) {
@@ -23,7 +25,11 @@ class HeaderComponent extends Component {
 
     handleScroll = () => {
         this.setState({topLen: document.documentElement.scrollTop});
-        console.log(document.documentElement.scrollTop);
+    };
+
+    handleFacebookClick = () => {
+        const fbwin = window.open('https://www.facebook.com/compensadoselaminadoswa/', '_blank');
+        fbwin.focus()
     };
 
     componentDidMount() {
@@ -43,9 +49,9 @@ class HeaderComponent extends Component {
         return (
             <div>
                 <GreenHeader>
-                    <TextoContato>Telefone: (42) 3436-1412 | Whatsapp: (42) 99127-4005 |
-                        azaltda@uol.com.br</TextoContato>
-                    <FacebookButton icon={faFacebookSquare}/>
+                    <TextoContato>Telefone: {telefone} | Whatsapp: {celular} |
+                        {email}</TextoContato>
+                    <FacebookButton onClick={this.handleFacebookClick} icon={faFacebookSquare}/>
                 </GreenHeader>
                 <NavigationHeader topLen={this.state.topLen}>
                     <LogoComponent/>
