@@ -5,7 +5,7 @@ import { slideUpFromBottomKeyframe } from "../../utils/animations.utils";
 export const OrcamentoContainer = styled.div`
     height: 30vh;
     width: 100%;
-    background: url("http://compensadoswa.com.br/wp-content/uploads/2014/06/page_bkgd8.jpg");
+    background: url("/images/page_bkgd8.jpg");
     background-size: cover;
     padding: 30px 0;
 `;

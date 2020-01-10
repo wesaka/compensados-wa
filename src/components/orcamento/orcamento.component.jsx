@@ -1,4 +1,4 @@
-// http://compensadoswa.com.br/wp-content/uploads/2014/06/page_bkgd8.jpg
+// /images/page_bkgd8.jpg
 
 import React from "react";
 import {ButtonContainer, ButtonOrcamento, OrcamentoContainer, TitleOrcamento} from "./orcamento.styles";
