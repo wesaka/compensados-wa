@@ -25,7 +25,7 @@ const HomePage = () => (
         </SliderComponent>
         <Spacer/>
         <FillerComponent color='white' title='Princípios' content={fillerPrincipios}/>
-        <FillerComponent color='antiquewhite' title='Segmentos' content={fillerSegmentos}/>
+        <FillerComponent color='#eee' title='Segmentos' content={fillerSegmentos}/>
         <OrcamentoComponent/>
         <Spacer/>
 

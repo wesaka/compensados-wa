@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {
     FacebookButton,
-    GreenHeader,
+    GreenHeader, HeaderContainer, HeaderFilling,
     NavigationHeader,
     TextoContato
 } from "./header.styles";
@@ -24,7 +24,10 @@ class HeaderComponent extends Component {
     }
 
     handleScroll = () => {
-        this.setState({topLen: document.documentElement.scrollTop});
+        this.setState({
+                topLen: window.scrollY > 36 ? 36 : window.scrollY
+            }
+        );
     };
 
     handleFacebookClick = () => {
@@ -36,8 +39,7 @@ class HeaderComponent extends Component {
         window.addEventListener('scroll', this.handleScroll, {passive: true});
 
         this.setState({
-            headerVisible: true,
-            topLen: document.documentElement.scrollTop
+            headerVisible: true
         });
     }
 
@@ -48,16 +50,19 @@ class HeaderComponent extends Component {
     render() {
         return (
             <div>
+                <HeaderContainer topLen={this.state.topLen}>
                 <GreenHeader>
-                    <TextoContato>Telefone: {telefone} | Whatsapp: {celular} |
-                        {email}</TextoContato>
+                    <TextoContato>Telefone: {telefone} | Whatsapp: {celular} | {email}</TextoContato>
                     <FacebookButton onClick={this.handleFacebookClick} icon={faFacebookSquare}/>
                 </GreenHeader>
-                <NavigationHeader topLen={this.state.topLen}>
+                <NavigationHeader id='navigationheader'>
                     <LogoComponent/>
                     <HeaderButtonsComponent/>
                 </NavigationHeader>
+                </HeaderContainer>
+                <HeaderFilling/>
             </div>
+
         )
     }
     ;

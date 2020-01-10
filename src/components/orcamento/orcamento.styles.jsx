@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
+import { slideUpFromBottomKeyframe } from "../../utils/animations.utils";
 
 export const OrcamentoContainer = styled.div`
     height: 30vh;
@@ -15,6 +16,15 @@ export const TitleOrcamento = styled.h1`
   font-weight: 500;
 `;
 
+export const ButtonContainer = styled.div`
+    animation-name: ${slideUpFromBottomKeyframe};
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+`;
+
 export const ButtonOrcamento = styled(Link)`
     background: none;
     color: black;
@@ -22,6 +32,7 @@ export const ButtonOrcamento = styled(Link)`
     border-radius: 2px;
     padding: 15px;
     font-weight: 600;
+    text-decoration: none;
     
     &:hover {
       color: black;

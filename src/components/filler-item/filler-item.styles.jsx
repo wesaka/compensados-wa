@@ -6,7 +6,7 @@ import styled from "styled-components";
 export const FillerItemsContainer = styled.div`
     text-align: left;
     padding: 20px;
-    flex: 1 0 33%;
+    flex: 1 0 28%;
     width: 20%;
     min-width: 20%;
 `;
@@ -18,8 +18,4 @@ export const FillerItemImage = styled.img`
 
 export const FillerItemTitle = styled.h3`
     margin: 10px 0;
-`;
-
-export const FillerItemParagraph = styled.p`
-    
 `;
