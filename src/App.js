@@ -2,6 +2,10 @@ import React from 'react';
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 import HeaderComponent from "./components/header/header.component";
 import HomePage from "./pages/home/home.component";
 import ProdutosPage from "./pages/produtos/produtos.component";
