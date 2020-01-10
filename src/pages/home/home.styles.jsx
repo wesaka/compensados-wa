@@ -14,7 +14,7 @@ export const Slide = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: start;
-    padding-left: 50px;
+    padding-left: 14vw;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);

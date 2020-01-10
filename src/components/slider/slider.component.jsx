@@ -1,7 +1,13 @@
 import React, { Component } from "react";
-import Slider from 'react-slick';
+import {SliderNext, SliderNextButton, SliderPrev, SliderPrevButton, StyledSlider} from "./slider.styles";
+
+import { faArrowAltCircleRight, faArrowAltCircleLeft } from "@fortawesome/free-regular-svg-icons";
 
 export default class SliderComponent extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         const settings = {
             arrows: false,
@@ -15,11 +21,15 @@ export default class SliderComponent extends Component {
             adaptiveHeight: true
         };
 
+
+
         return (
             <div>
-                <Slider {...settings}>
+                <SliderPrev onClick={() => this.slider.slickPrev()}><SliderPrevButton icon={faArrowAltCircleLeft}/></SliderPrev>
+                <SliderNext onClick={() => this.slider.slickNext()}><SliderNextButton icon={faArrowAltCircleRight}/></SliderNext>
+                <StyledSlider ref={c => (this.slider = c)} {...settings}>
                     {this.props.children}
-                </Slider>
+                </StyledSlider>
             </div>
         )
     }
