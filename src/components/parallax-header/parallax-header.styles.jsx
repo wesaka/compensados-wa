@@ -28,10 +28,3 @@ export const ParallaxViewer = styled.div`
     height: 50vh;
     z-index: 5;
 `;
-
-export const TestDiv = styled.div`
-position: relative;
-height: 1000px;
-background: red;
-z-index: 1;
-`;

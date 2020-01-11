@@ -1,6 +1,3 @@
-import FillerItemComponent from "../components/filler-item/filler-item.component";
-import React from "react";
-
 export const fillerPrincipios = [
     {
         imgUrl: '/images/planet.jpg',

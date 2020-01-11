@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const ContatoContainer = styled.div`
     flex: 1 1 50%;
+    
+    display: flex;
+    flex-direction: column;
 `;
 
 export const FormContato = styled.div`

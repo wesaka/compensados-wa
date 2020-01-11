@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { withRouter } from 'react-router-dom';
 import {
     FacebookButton,
     GreenHeader, HeaderContainer, HeaderFilling,
@@ -56,7 +57,7 @@ class HeaderComponent extends Component {
                     <FacebookButton onClick={this.handleFacebookClick} icon={faFacebookSquare}/>
                 </GreenHeader>
                 <NavigationHeader id='navigationheader'>
-                    <LogoComponent/>
+                    <LogoComponent history={this.props.history}/>
                     <HeaderButtonsComponent/>
                 </NavigationHeader>
                 </HeaderContainer>
@@ -68,4 +69,4 @@ class HeaderComponent extends Component {
     ;
 }
 
-export default HeaderComponent;
+export default withRouter(HeaderComponent);

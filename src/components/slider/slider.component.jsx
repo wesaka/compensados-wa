@@ -4,10 +4,6 @@ import {SliderNext, SliderNextButton, SliderPrev, SliderPrevButton, StyledSlider
 import { faArrowAltCircleRight, faArrowAltCircleLeft } from "@fortawesome/free-regular-svg-icons";
 
 export default class SliderComponent extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         const settings = {
             arrows: false,

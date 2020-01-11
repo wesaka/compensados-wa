@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,6 +12,8 @@ import ProdutosPage from "./pages/produtos/produtos.component";
 import EmpresaPage from "./pages/empresa/empresa.component";
 import ContatoPage from "./pages/contato/contato.component";
 import FooterComponent from "./components/footer/footer.component";
+
+// TODO add google analytics
 
 function App() {
   return (

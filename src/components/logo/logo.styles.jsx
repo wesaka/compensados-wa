@@ -5,4 +5,8 @@ export const Logo = styled.img`
   max-width: 135px;
   width: auto;
   height: auto;
+  
+  &:hover {
+    cursor: pointer;
+  }
 `;
