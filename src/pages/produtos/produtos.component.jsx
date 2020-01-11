@@ -3,6 +3,7 @@ import {TestDiv} from "../../components/parallax-header/parallax-header.styles";
 import ParallaxHeaderComponent from "../../components/parallax-header/parallax-header.component";
 import ProdutoComponent from "../../components/produto/produto.component";
 import {ProdutosPageContainer} from "./produtos.styles";
+import OrcamentoComponent from "../../components/orcamento/orcamento.component";
 
 const data = require('../../assets/produtosData');
 
@@ -12,6 +13,7 @@ const ProdutosPage = () => (
         <ProdutosPageContainer>
             {data.map(item => (<ProdutoComponent {...item}/>))}
         </ProdutosPageContainer>
+        <OrcamentoComponent/>
     </div>
 );
 

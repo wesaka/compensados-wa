@@ -27,6 +27,7 @@ export const TextoContato = styled.span`
   margin: 10px 0;
   color: white;
   font-size: 13px;
+  transform: translateY(-25%);
 `;
 
 export const FacebookButton = styled(FontAwesomeIcon)`

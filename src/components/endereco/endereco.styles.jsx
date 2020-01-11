@@ -7,3 +7,7 @@ export const EnderecoContainer = styled.div`
   margin-left: 1em;
   flex: 0 0 20%;
 `;
+
+export const EnderecoData = styled.p`
+  padding-top: 0.5em;
+`;

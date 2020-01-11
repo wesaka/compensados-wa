@@ -10,6 +10,7 @@ export const FormContato = styled.div`
     flex-wrap: wrap;
     margin-left: 0.5em;
     margin-right: 0.5em;
+    margin-top: 0.5em;
 `;
 
 export const InputSmall = styled.input`
