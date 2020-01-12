@@ -26,6 +26,8 @@ history.listen(location => {
     ReactGA.pageview(location.pathname);
 });
 
+// TODO when the user changes page, bring viewport to top, also add a button on footer to do so
+
 function App() {
   return (
       <Router history={history}>
