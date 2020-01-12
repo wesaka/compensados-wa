@@ -6,6 +6,7 @@ import { SuccessMessage, FailureMessage } from "../email-status-message/email-st
 import * as emailjs from "emailjs-com";
 import SendingComponent from "../sending/sending.component";
 import ReactGA from 'react-ga';
+import {validateEmail} from "../../utils/verify.utils";
 
 class ContatoForm extends Component {
     constructor(props) {
@@ -24,7 +25,34 @@ class ContatoForm extends Component {
         this.inputSubject = React.createRef();
     }
 
+    inputOnChange = (event) => {
+        // Remove any border styles of the component when written on
+        if (event.target.value) {
+            event.target.style.removeProperty("border");
+        }
+    };
+
     sendEmail = ({name, email, subject, message}) => {
+        // Verify if the fields are not empty, and if are, alert the user
+        const redBorder = "2px solid red";
+        if (!name) {
+            this.inputName.style.border = redBorder;
+            this.inputName.focus();
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            this.inputEmail.style.border = redBorder;
+            this.inputEmail.focus();
+            return;
+        }
+
+        if (!message) {
+            this.inputMessage.style.border = redBorder;
+            this.inputMessage.focus();
+            return;
+        }
+
         this.setState({
             sentMessage: true
         });
@@ -64,8 +92,6 @@ class ContatoForm extends Component {
         console.log("Error sending email: ", err);
     };
 
-
-
     message = () => {
         if (this.state.showSuccessMessage) return <SuccessMessage/>;
         if (this.state.showFailureMessage) return <FailureMessage/>;
@@ -76,10 +102,10 @@ class ContatoForm extends Component {
         const formContato = () => (
             <div>
                 <FormContato>
-                    <InputSmall ref={c => this.inputName = c} type='text' name='fname' placeholder='Nome (Obrigatório)'/>
-                    <InputSmall ref={c => this.inputEmail = c} type='email' name='email' placeholder='E-mail (Obrigatório)'/>
-                    <InputSmall ref={c => this.inputSubject = c} type='text' name='subject' placeholder='Assunto'/>
-                    <InputBig ref={c => this.inputMessage = c} type='text' name='message' placeholder='Mensagem'/>
+                    <InputSmall onChange={this.inputOnChange} ref={c => this.inputName = c} type='text' name='fname' placeholder='Nome (Obrigatório)'/>
+                    <InputSmall onChange={this.inputOnChange} ref={c => this.inputEmail = c} type='email' name='email' placeholder='E-mail (Obrigatório)'/>
+                    <InputSmall onChange={this.inputOnChange} ref={c => this.inputSubject = c} type='text' name='subject' placeholder='Assunto'/>
+                    <InputBig onChange={this.inputOnChange} ref={c => this.inputMessage = c} type='text' name='message' placeholder='Mensagem'/>
                 </FormContato>
                 {this.state.sentMessage ?
                     <SendingComponent/> :
