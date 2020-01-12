@@ -37,7 +37,7 @@ function App() {
                   <Route exact path='/' component={HomePage}/>
                   <Route exact path='/produtos' component={ProdutosPage}/>
                   <Route exact path='/empresa' component={EmpresaPage}/>
-                  <Route exact path='/contato' component={ContatoPage}/>
+                  <Route path='/contato' component={ContatoPage}/>
               </Switch>
               <FooterComponent/>
           </div>

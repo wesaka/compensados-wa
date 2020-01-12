@@ -7,7 +7,7 @@ const OrcamentoComponent = () => (
     <OrcamentoContainer>
         <TitleOrcamento>Solicite um orçamento agora mesmo!</TitleOrcamento>
         <ButtonContainer>
-            <ButtonOrcamento to='/contato' >ENTRE EM CONTATO</ButtonOrcamento>
+            <ButtonOrcamento to='/contato/orcamento' >ENTRE EM CONTATO</ButtonOrcamento>
         </ButtonContainer>
     </OrcamentoContainer>
 );

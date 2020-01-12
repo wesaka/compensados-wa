@@ -16,7 +16,7 @@ class ContatoForm extends Component {
             showForm: true,
             showSuccessMessage: false,
             showFailureMessage: false,
-            sentMessage: false
+            sentMessage: false,
         };
 
         this.inputName = React.createRef();
@@ -104,7 +104,7 @@ class ContatoForm extends Component {
                 <FormContato>
                     <InputSmall onChange={this.inputOnChange} ref={c => this.inputName = c} type='text' name='fname' placeholder='Nome (Obrigatório)'/>
                     <InputSmall onChange={this.inputOnChange} ref={c => this.inputEmail = c} type='email' name='email' placeholder='E-mail (Obrigatório)'/>
-                    <InputSmall onChange={this.inputOnChange} ref={c => this.inputSubject = c} type='text' name='subject' placeholder='Assunto'/>
+                    <InputSmall onChange={this.inputOnChange} value={this.props.orcamento ? "Orçamento" : ""} ref={c => this.inputSubject = c} type='text' name='subject' placeholder='Assunto'/>
                     <InputBig onChange={this.inputOnChange} ref={c => this.inputMessage = c} type='text' name='message' placeholder='Mensagem'/>
                 </FormContato>
                 {this.state.sentMessage ?
