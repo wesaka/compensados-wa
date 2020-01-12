@@ -10,6 +10,7 @@ import {
 } from "./produto.styles";
 
 import { faHandPointRight } from "@fortawesome/free-regular-svg-icons";
+import {uid} from "react-uid";
 
 const ProdutoComponent = ({title, imgUrl, imgLeft, description, characteristics}) => (
     <ProdutoContainer>
@@ -24,7 +25,7 @@ const ProdutoComponent = ({title, imgUrl, imgLeft, description, characteristics}
             <ProdutoDescriptionContainer imgLeft={imgLeft}>
                 <ProdutoDescription>{description}</ProdutoDescription>
                 {characteristics.map(characteristic => (
-                    <ProdutoCharacteristicsItem>
+                    <ProdutoCharacteristicsItem key={uid(characteristic)}>
                         <ProdutoCharacteristicsArrow icon={faHandPointRight}/>
                         <ProdutoCharacteristicsText>{characteristic}</ProdutoCharacteristicsText>
                     </ProdutoCharacteristicsItem>
@@ -37,7 +38,7 @@ const ProdutoComponent = ({title, imgUrl, imgLeft, description, characteristics}
             <ProdutoDescriptionContainer imgLeft={imgLeft}>
                 <ProdutoDescription>{description}</ProdutoDescription>
                 {characteristics.map(characteristic => (
-                    <ProdutoCharacteristicsItem>
+                    <ProdutoCharacteristicsItem key={uid(characteristic)}>
                         <ProdutoCharacteristicsArrow icon={faHandPointRight}/>
                         <ProdutoCharacteristicsText>{characteristic}</ProdutoCharacteristicsText>
                     </ProdutoCharacteristicsItem>
