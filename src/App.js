@@ -16,8 +16,7 @@ import EmpresaPage from "./pages/empresa/empresa.component";
 import ContatoPage from "./pages/contato/contato.component";
 import FooterComponent from "./components/footer/footer.component";
 
-ReactGA.ga('create', `${process.env.REACT_APP_TRACKING_AN}`, 'auto', {'name': 'GoogleAnalyticsTracker'});
-ReactGA.ga('create', `${process.env.REACT_APP_TRACKING}`, 'auto', {'name': 'GoogleAdsTracker'});
+ReactGA.initialize(`${process.env.REACT_APP_TRACKING_AN}`);
 
 // Setting the history for pageview
 const history = createBrowserHistory();
