@@ -5,6 +5,7 @@ import {ContatoContainer} from "./contato-form.styles";
 import { SuccessMessage, FailureMessage } from "../email-status-message/email-status-message.component";
 import * as emailjs from "emailjs-com";
 import SendingComponent from "../sending/sending.component";
+import ReactGA from 'react-ga';
 
 class ContatoForm extends Component {
     constructor(props) {
@@ -26,6 +27,11 @@ class ContatoForm extends Component {
     sendEmail = ({name, email, subject, message}) => {
         this.setState({
             sentMessage: true
+        });
+
+        ReactGA.event({
+            category: "E-Mail Enviado",
+            action: "Usuário enviou um e-mail através da página contato."
         });
 
         const templateParams = {
@@ -55,10 +61,7 @@ class ContatoForm extends Component {
             showForm: false,
             showFailureMessage: true,
         });
-<<<<<<< HEAD
         console.log("Error sending email: ", err);
-=======
->>>>>>> f043f6075c34a381dadcbafd4ae008ec1e50e8c9
     };
 
 
