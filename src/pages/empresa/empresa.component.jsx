@@ -5,7 +5,10 @@ import HistoriaComponent from "../../components/historia/historia.component";
 
 class EmpresaPage extends Component{
     componentDidMount() {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     render() {

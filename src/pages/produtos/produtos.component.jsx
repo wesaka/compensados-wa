@@ -9,7 +9,10 @@ const data = require('../../assets/produtosData');
 
 class ProdutosPage extends Component{
     componentDidMount() {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     render() {
