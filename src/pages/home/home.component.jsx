@@ -6,10 +6,13 @@ import FillerComponent from "../../components/filler/filler.component";
 
 import { fillerPrincipios, fillerSegmentos } from "../../assets/fillerContent";
 import OrcamentoComponent from "../../components/orcamento/orcamento.component";
+import {logPageView} from "../../utils/analytics.utils";
 
 class HomePage extends Component {
     componentDidMount() {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+
+        logPageView();
     }
 
     render() {

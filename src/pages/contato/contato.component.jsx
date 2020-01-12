@@ -3,10 +3,13 @@ import React, {Component} from "react";
 import ContatoForm from "../../components/contato-form/contato-form.component";
 import EnderecoComponent from "../../components/endereco/endereco.component";
 import {ContatoContainer, MapFrame} from "./contato.styles"
+import {logPageView} from "../../utils/analytics.utils";
 
 class ContatoPage extends Component {
     componentDidMount() {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+
+        logPageView();
     }
 
     render() {

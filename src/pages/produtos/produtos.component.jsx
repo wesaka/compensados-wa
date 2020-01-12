@@ -4,12 +4,15 @@ import ProdutoComponent from "../../components/produto/produto.component";
 import {ProdutosPageContainer} from "./produtos.styles";
 import OrcamentoComponent from "../../components/orcamento/orcamento.component";
 import { uid } from "react-uid";
+import {logPageView} from "../../utils/analytics.utils";
 
 const data = require('../../assets/produtosData');
 
 class ProdutosPage extends Component{
     componentDidMount() {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+
+        logPageView();
     }
 
     render() {
