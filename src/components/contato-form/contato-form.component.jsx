@@ -55,7 +55,10 @@ class ContatoForm extends Component {
             showForm: false,
             showFailureMessage: true,
         });
+<<<<<<< HEAD
         console.log("Error sending email: ", err);
+=======
+>>>>>>> f043f6075c34a381dadcbafd4ae008ec1e50e8c9
     };
 
 
