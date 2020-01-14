@@ -25,8 +25,8 @@ export const TextoContato = styled.span`
   flex-grow: 1;
   margin: 10px 0;
   color: white;
-  font-size: 13px;
-  transform: translateY(-25%);
+  font-size: 12px;
+  transform: translateY(-20%);
 `;
 
 export const FacebookButton = styled(FontAwesomeIcon)`
@@ -58,5 +58,9 @@ export const NavigationHeader = styled.header`
 export const HeaderFilling = styled.div`
   height: 166px;
   z-index: -1;
+`;
+
+export const LinkPhone = styled.a`
+  text-decoration: underline;
 `;
 

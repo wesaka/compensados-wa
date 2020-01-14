@@ -12,6 +12,7 @@ import HeaderButtonsComponent from "../header-buttons/header-buttons.component";
 import LogoComponent from "../logo/logo.component";
 
 import {telefone, celular, email} from '../../assets/data';
+import { linkPhone } from "../../utils/phone.utils";
 import CompactNavigator from "../compact-navigator/compact-navigator.component";
 
 class HeaderComponent extends Component {
@@ -62,7 +63,7 @@ class HeaderComponent extends Component {
             <div>
                 <HeaderContainer topLen={this.state.topLen}>
                 <GreenHeader>
-                    <TextoContato>{`Telefone: ${telefone} | Whatsapp: ${celular}${this.state.hideNav ? '' : ` | ${email}`}`}</TextoContato>
+                    <TextoContato>{'Telefone: '}{linkPhone(telefone)}{' | Whatsapp: '}{linkPhone(celular)}{this.state.hideNav ? '' : ` | ${email}`}</TextoContato>
                     <FacebookButton onClick={this.handleFacebookClick} icon={faFacebookSquare}/>
                 </GreenHeader>
                 <NavigationHeader id='navigationheader'>
