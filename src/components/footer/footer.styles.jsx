@@ -16,6 +16,6 @@ export const FooterBottomContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 10px;
     padding: 10px 20px;
 `;

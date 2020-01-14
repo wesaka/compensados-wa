@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import {SliderNext, SliderNextButton, SliderPrev, SliderPrevButton, StyledSlider} from "./slider.styles";
+import {SliderNext, SliderPrev, StyledSlider} from "./slider.styles";
 
 import { faArrowAltCircleRight, faArrowAltCircleLeft } from "@fortawesome/free-regular-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default class SliderComponent extends Component {
     render() {
@@ -21,8 +22,8 @@ export default class SliderComponent extends Component {
 
         return (
             <div>
-                <SliderPrev onClick={() => this.slider.slickPrev()}><SliderPrevButton icon={faArrowAltCircleLeft}/></SliderPrev>
-                <SliderNext onClick={() => this.slider.slickNext()}><SliderNextButton icon={faArrowAltCircleRight}/></SliderNext>
+                <SliderPrev onClick={() => this.slider.slickPrev()}><FontAwesomeIcon icon={faArrowAltCircleLeft}/></SliderPrev>
+                <SliderNext onClick={() => this.slider.slickNext()}><FontAwesomeIcon icon={faArrowAltCircleRight}/></SliderNext>
                 <StyledSlider ref={c => (this.slider = c)} {...settings}>
                     {this.props.children}
                 </StyledSlider>
