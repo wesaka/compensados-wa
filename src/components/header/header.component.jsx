@@ -12,7 +12,7 @@ import HeaderButtonsComponent from "../header-buttons/header-buttons.component";
 import LogoComponent from "../logo/logo.component";
 
 import {telefone, celular, email} from '../../assets/data';
-
+import CompactNavigator from "../compact-navigator/compact-navigator.component";
 
 class HeaderComponent extends Component {
     constructor(props) {
@@ -20,9 +20,15 @@ class HeaderComponent extends Component {
 
         this.state = {
             headerVisible: false,
-            topLen: 0
+            topLen: 0,
+            hideNav: (window.innerWidth <= 760)
         }
     }
+
+    handleFacebookClick = () => {
+        const fbwin = window.open('https://www.facebook.com/compensadoselaminadoswa/', '_blank');
+        fbwin.focus()
+    };
 
     handleScroll = () => {
         this.setState({
@@ -31,13 +37,16 @@ class HeaderComponent extends Component {
         );
     };
 
-    handleFacebookClick = () => {
-        const fbwin = window.open('https://www.facebook.com/compensadoselaminadoswa/', '_blank');
-        fbwin.focus()
-    };
+   handleResize = () => {
+
+       this.setState({
+            hideNav: (window.innerWidth <= 760)
+       });
+   };
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll, {passive: true});
+        window.addEventListener('resize', this.handleResize);
 
         this.setState({
             headerVisible: true
@@ -53,13 +62,18 @@ class HeaderComponent extends Component {
             <div>
                 <HeaderContainer topLen={this.state.topLen}>
                 <GreenHeader>
-                    <TextoContato>Telefone: {telefone} | Whatsapp: {celular} | {email}</TextoContato>
+                    <TextoContato>{`Telefone: ${telefone} | Whatsapp: ${celular}${this.state.hideNav ? '' : ` | ${email}`}`}</TextoContato>
                     <FacebookButton onClick={this.handleFacebookClick} icon={faFacebookSquare}/>
                 </GreenHeader>
                 <NavigationHeader id='navigationheader'>
                     <LogoComponent history={this.props.history}/>
-                    <HeaderButtonsComponent/>
+                    {this.state.hideNav ?
+                        <CompactNavigator history={this.props.history}/>
+                        :
+                        <HeaderButtonsComponent/>
+                    }
                 </NavigationHeader>
+
                 </HeaderContainer>
                 <HeaderFilling/>
             </div>
