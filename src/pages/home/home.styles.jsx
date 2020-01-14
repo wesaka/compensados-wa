@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export const BackgroundContainer = styled.div`
     position: relative;
     height: 68vh;
+    width: 100vw;
     background-image: url(${({url}) => url});
     background-repeat: no-repeat;
     background-position: center center;
@@ -44,6 +45,6 @@ export const CarouselButton = styled(Link)`
 
 export const Spacer = styled.div`
     height: 50px;
-    width: 100%;
+    width: 100vw;
     opacity: 0;
 `;

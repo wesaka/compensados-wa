@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const HeaderContainer = styled.div`
-   width: 100%;
+   width: 100vw;
    position: fixed;
    top: 0; 
    z-index: 1000;

@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { slideUpFromBottomKeyframe } from "../../utils/animations.utils";
 
 export const OrcamentoContainer = styled.div`
-    height: 30vh;
-    width: 100%;
+    width: 100vw;
     background: url("/images/page_bkgd8.jpg");
     background-size: cover;
     padding: 30px 0;
@@ -23,6 +22,7 @@ export const ButtonContainer = styled.div`
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-play-state: running;
+    padding-bottom: 3vh;
 `;
 
 export const ButtonOrcamento = styled(Link)`
