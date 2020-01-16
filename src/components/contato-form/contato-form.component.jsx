@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import SectionTitleComponent from "../section-title/section-title.component";
-import {ButtonContato, FormContato, InputBig, InputSmall} from "./contato-form.styles";
+import {ButtonContato, FormContato, InputBig, InputPhone, InputSmall} from "./contato-form.styles";
 import {ContatoContainer} from "./contato-form.styles";
 import { SuccessMessage, FailureMessage } from "../email-status-message/email-status-message.component";
 import * as emailjs from "emailjs-com";
@@ -17,12 +17,27 @@ class ContatoForm extends Component {
             showSuccessMessage: false,
             showFailureMessage: false,
             sentMessage: false,
+            prevPhoneNumber: ""
         };
 
         this.inputName = React.createRef();
         this.inputEmail = React.createRef();
+        this.inputTelefone = React.createRef();
         this.inputSubject = React.createRef();
         this.inputSubject = React.createRef();
+
+        // Check if user has inputted some values in form
+        window.addEventListener("beforeunload", (ev) =>
+        {
+            if (this.inputName.value && this.inputEmail.value) {
+                const dados = `email:${this.inputEmail.value}; name:${this.inputName.value}; phone:${this.inputTelefone.value}; subject:${this.inputSubject.value}; message:${this.inputMessage.value}`;
+                ReactGA.event({
+                    category: "Contact",
+                    action: "Usuário abandonou a paǵina de contato.",
+                    label: dados
+                });
+            }
+        });
     }
 
     inputOnChange = (event) => {
@@ -32,7 +47,7 @@ class ContatoForm extends Component {
         }
     };
 
-    sendEmail = ({name, email, subject, message}) => {
+    sendEmail = ({name, email, phone, subject, message}) => {
         // Verify if the fields are not empty, and if are, alert the user
         const redBorder = "2px solid red";
         if (!name) {
@@ -57,15 +72,11 @@ class ContatoForm extends Component {
             sentMessage: true
         });
 
-        ReactGA.event({
-            category: "E-Mail Enviado",
-            action: "Usuário enviou um e-mail através da página contato."
-        });
-
         const templateParams = {
             from_name: name,
-            email: email,
-            subject: subject,
+            email,
+            phone,
+            subject,
             message_html: message
         };
 
@@ -81,6 +92,11 @@ class ContatoForm extends Component {
         this.setState({
             showForm: false,
             showSuccessMessage: true,
+        });
+
+        ReactGA.event({
+            category: "Contact",
+            action: "Usuário enviou um e-mail através da página contato."
         });
     };
 
@@ -104,7 +120,8 @@ class ContatoForm extends Component {
                 <FormContato>
                     <InputSmall onChange={this.inputOnChange} ref={c => this.inputName = c} type='text' name='fname' placeholder='Nome (Obrigatório)'/>
                     <InputSmall onChange={this.inputOnChange} ref={c => this.inputEmail = c} type='email' name='email' placeholder='E-mail (Obrigatório)'/>
-                    <InputSmall onChange={this.inputOnChange} value={this.props.orcamento ? "Orçamento" : ""} ref={c => this.inputSubject = c} type='text' name='subject' placeholder='Assunto'/>
+                    <InputPhone mask='(99) 999999999' onChange={this.inputOnChange} ref={c => this.inputTelefone = c} type='text' name='phone' placeholder='Telefone'/>
+                    <InputSmall onChange={this.inputOnChange} value={this.props.orcamento ? "Orçamento": undefined } ref={c => this.inputSubject = c} type='text' name='subject' placeholder='Assunto'/>
                     <InputBig onChange={this.inputOnChange} ref={c => this.inputMessage = c} type='text' name='message' placeholder='Mensagem'/>
                 </FormContato>
                 {this.state.sentMessage ?
@@ -112,6 +129,7 @@ class ContatoForm extends Component {
                     <ButtonContato onClick={() => this.sendEmail({
                         name: this.inputName.value,
                         email: this.inputEmail.value,
+                        phone: this.inputTelefone.value,
                         subject: this.inputSubject.value,
                         message: this.inputMessage.value
                     })}>ENVIAR MENSAGEM</ButtonContato>}

@@ -7,7 +7,7 @@ const messageStyle = css`
 `;
 
 const iconStyle = css`
-    font-size: 2em;
+    font-size: 3em;
     padding: 10px;
 `;
 

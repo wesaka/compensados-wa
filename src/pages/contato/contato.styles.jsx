@@ -10,4 +10,5 @@ export const ContatoContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 25px 0;
 `;

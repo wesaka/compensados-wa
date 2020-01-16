@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import InputMask from 'react-input-mask';
+
 export const ContatoContainer = styled.div`
     flex: 1 1 50%;
     
@@ -17,6 +19,15 @@ export const FormContato = styled.div`
 `;
 
 export const InputSmall = styled.input`
+    width: 30vw;
+    min-width: 150px;
+    height: 38px;
+    flex: 1 1 20%;
+    margin: 0.5em;
+    padding: 0 1em;
+`;
+
+export const InputPhone = styled(InputMask)`
     width: 30vw;
     min-width: 150px;
     height: 38px;
