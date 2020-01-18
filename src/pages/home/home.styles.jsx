@@ -28,6 +28,7 @@ export const Tagline = styled.h1`
     margin: 10px 0;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.6) 1px 0 10px;
+    text-align: left;
 `;
 
 export const CarouselButton = styled(Link)`
