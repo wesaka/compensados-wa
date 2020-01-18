@@ -1,4 +1,4 @@
-import {rua, numero, bairro, cep, cidade, estado, telefone, email} from './data'
+import {rua, numero, bairro, cep, cidade, estado, telefone, email, nomeVendedor, celularVendedor} from './data'
 
 export const footerContent = [
     {
@@ -9,7 +9,7 @@ export const footerContent = [
     {
         title: 'CONTATO',
         map: false,
-        paragraph: `${rua}, ${numero}\n${bairro}, ${cep}\n${cidade} - ${estado}\nTelefone: ${telefone}\nE-mail: ${email}`,
+        paragraph: `${rua}, ${numero}\n${bairro}, ${cep}\n${cidade} - ${estado}\nTelefone: ${telefone}\nE-mail: ${email}\n\nFale direto com nosso vendedor:\n${nomeVendedor} - ${celularVendedor}`,
     },
     {
         title: 'MAPA',

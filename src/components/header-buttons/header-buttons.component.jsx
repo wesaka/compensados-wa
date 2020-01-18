@@ -5,7 +5,7 @@ const HeaderButtonsComponent = () => (
     <HeaderButtonsContainer>
         <NavigationButton to='/'>
             <NavigationAccent/>
-            Home
+            Início
         </NavigationButton>
         <NavigationButton to='/produtos'>
             <NavigationAccent/>
