@@ -25,7 +25,9 @@ class ContatoForm extends Component {
         this.inputTelefone = React.createRef();
         this.inputSubject = React.createRef();
         this.inputSubject = React.createRef();
+    }
 
+    componentDidMount() {
         // Check if user has inputted some values in form
         window.addEventListener("beforeunload", (ev) =>
         {

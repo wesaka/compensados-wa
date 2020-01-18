@@ -11,9 +11,14 @@ export const PicturesContainer = styled.div`
 `;
 
 export const PictureItem = styled.img`
-    padding: 1.5em;
+    margin: 1.5em;
     width: 20vw;
     max-width: 700px;
     min-width: 200px;
     flex: 1 1 20%;
+    
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
 `;
