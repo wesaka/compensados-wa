@@ -29,9 +29,11 @@ export const ProdutoSecondSection = styled.div`
 
 export const ProdutoImage = styled.img`
     width: 50vw;
+    min-width: 400px;
     padding: 20px 5px;
     flex: 1 1 50%;
     object-fit: scale-down;
+    margin: 0 20px;
 `;
 
 const leftImageStyle = css`

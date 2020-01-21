@@ -20,7 +20,7 @@ class ProdutosPage extends Component{
             <div>
                 <ParallaxHeaderComponent title='Produtos' background='/images/produto.jpg'/>
                 <ProdutosPageContainer>
-                    {data.map(item => (<ProdutoComponent key={uid(item)} {...item}/>))}
+                    {data.map((item, key) => (<ProdutoComponent index={key} key={uid(item)} {...item}/>))}
                 </ProdutosPageContainer>
                 <OrcamentoComponent/>
             </div>

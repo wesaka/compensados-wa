@@ -5,8 +5,7 @@
     "characteristics": [
       "Comprimento: 1.150 a 2.600mm.", "Larguras: de 200 a 1.950mm."
     ],
-    "imgUrl": "/images/lamina-madeira.jpg",
-    "imgLeft": true
+    "imgUrl": "/images/lamina-madeira.jpg"
   },
   {
     "title": "Compensados Plastificados",
@@ -14,8 +13,7 @@
     "characteristics": [
       "É utilizado na construção civil como fôrmas para concreto aparente, pilares, lages e vigas.", "Trabalhamos com as medidas de 2,20m x 1,10m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 10mm à 27mm.", "Garantimos a reutilização desde que se obedeçam aos critérios adequados conforme as normas técnicas da construção civil da ABNT."
     ],
-    "imgUrl": "/images/compensado_plastificado_atriunfo-2.jpg",
-    "imgLeft": false
+    "imgUrl": "/images/compensado_plastificado_atriunfo-2.jpg"
   },
   {
     "title": "Compensados Plastificados AntiDerrapantes",
@@ -23,8 +21,7 @@
     "characteristics": [
       "Palcos, assoalhos para containers, passarelas, andaimes e pisos em geral.", "Trabalhamos com as medidas de 2,20m x 1,10m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 10mm à 27mm."
     ],
-    "imgUrl": "/images/antiderrapante2.jpg",
-    "imgLeft": true
+    "imgUrl": "/images/antiderrapante2.jpg"
   },
   {
     "title": "Compensados Resinados",
@@ -32,8 +29,7 @@
     "characteristics": [
       "É utilizado na construção civil como tapumes, bandejões, fôrmas de concreto não aparente e canteiro de obra.", "Trabalhamos com as medidas de 2,20m x 1,10m, 2,20m x 1,60m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 3,7mm à 27mm."
     ],
-    "imgUrl": "/images/compensado-resinado.jpg",
-    "imgLeft": false
+    "imgUrl": "/images/compensado-resinado.jpg"
   },
   {
     "title": "Compensados para Embalagens",
@@ -41,8 +37,7 @@
     "characteristics": [
       "É utilizado para embalagens, colchões, mezaninos, divisórias, prateleiras, pallets, entre outros.", "Trabalhamos com as medidas de 2,20m x 1,10m, 2,20m x 1,60m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 3,7mm à 27mm."
     ],
-    "imgUrl": "/images/compensados-embalagens.jpg",
-    "imgLeft": true
+    "imgUrl": "/images/compensados-embalagens.jpg"
   },
   {
     "title": "Painel Mezanino Cimentício",
@@ -50,7 +45,6 @@
     "characteristics": [
       "Trabalhamos com as medidas de 1,20m x 2,40m e 1,20m x 2,50m, nas espessuras de 23mm ou 40mm.", "Produto com garantia de qualidade.", "É utilizado para construção civil em geral."
     ],
-    "imgUrl": "/images/mezanino-cimenticio.jpg",
-    "imgLeft": false
+    "imgUrl": "/images/mezanino-cimenticio.jpg"
   }
 ]

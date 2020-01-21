@@ -12,13 +12,13 @@ import {
 import { faHandPointRight } from "@fortawesome/free-regular-svg-icons";
 import {uid} from "react-uid";
 
-const ProdutoComponent = ({title, imgUrl, imgLeft, description, characteristics}) => (
+const ProdutoComponent = ({index, title, imgUrl, imgLeft, description, characteristics}) => (
     <ProdutoContainer>
         <ProdutoTitle>{title}</ProdutoTitle>
         <ProdutoDivider/>
         <ProdutoSecondSection>
         {
-            imgLeft
+            (index % 2 === 0)
                 ?
             <ProdutoImage src={imgUrl}/>
                 :
@@ -33,7 +33,7 @@ const ProdutoComponent = ({title, imgUrl, imgLeft, description, characteristics}
             </ProdutoDescriptionContainer>
         }
         {
-            imgLeft
+            (index % 2 === 0)
                 ?
             <ProdutoDescriptionContainer imgLeft={imgLeft}>
                 <ProdutoDescription>{description}</ProdutoDescription>
