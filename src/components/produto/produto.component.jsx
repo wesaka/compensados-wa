@@ -11,8 +11,10 @@ import {
 
 import { faHandPointRight } from "@fortawesome/free-regular-svg-icons";
 import {uid} from "react-uid";
+import TabelaComponent from "../tabela/tabela.component";
 
-const ProdutoComponent = ({index, title, imgUrl, imgLeft, description, characteristics}) => (
+const ProdutoComponent = ({index, title, imgUrl, description, characteristics}) => (
+
     <ProdutoContainer>
         <ProdutoTitle>{title}</ProdutoTitle>
         <ProdutoDivider/>
@@ -22,9 +24,9 @@ const ProdutoComponent = ({index, title, imgUrl, imgLeft, description, character
                 ?
             <ProdutoImage src={imgUrl}/>
                 :
-            <ProdutoDescriptionContainer imgLeft={imgLeft}>
+            <ProdutoDescriptionContainer imgLeft={false}>
                 <ProdutoDescription>{description}</ProdutoDescription>
-                {characteristics.map(characteristic => (
+                {characteristics.map((characteristic, index) => (
                     <ProdutoCharacteristicsItem key={uid(characteristic)}>
                         <ProdutoCharacteristicsArrow icon={faHandPointRight}/>
                         <ProdutoCharacteristicsText>{characteristic}</ProdutoCharacteristicsText>
@@ -35,7 +37,7 @@ const ProdutoComponent = ({index, title, imgUrl, imgLeft, description, character
         {
             (index % 2 === 0)
                 ?
-            <ProdutoDescriptionContainer imgLeft={imgLeft}>
+            <ProdutoDescriptionContainer imgLeft={true}>
                 <ProdutoDescription>{description}</ProdutoDescription>
                 {characteristics.map(characteristic => (
                     <ProdutoCharacteristicsItem key={uid(characteristic)}>
@@ -47,6 +49,7 @@ const ProdutoComponent = ({index, title, imgUrl, imgLeft, description, character
                 :
             <ProdutoImage src={imgUrl}/>
         }
+            {index === 0 ? <TabelaComponent/> : null}
         </ProdutoSecondSection>
     </ProdutoContainer>
 );

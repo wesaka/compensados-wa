@@ -1,0 +1,80 @@
+[
+  {
+    "medida": "1,22m x 2,44m",
+    "processos": "1",
+    "espessuras": [
+      {
+        "espessura": "18mm",
+        "camadas": "7, 9 ou 11"
+      },
+      {
+        "espessura": "17mm",
+        "camadas": "7, 9 ou 11"
+      },
+      {
+        "espessura": "16mm",
+        "camadas": "7, 9 ou 11"
+      },
+      {
+        "espessura": "14mm",
+        "camadas": "5 ou 7"
+      },
+      {
+        "espessura": "11mm",
+        "camadas": "5"
+      },
+      {
+        "espessura": "9mm",
+        "camadas": "3 ou 5"
+      }
+    ]
+  },
+  {
+    "medida": "1,10m x 2,20m",
+    "processos": "1",
+    "espessuras": [
+      {
+        "espessura": "18mm",
+        "camadas": "7, 9 ou 11"
+      },
+      {
+        "espessura": "16mm",
+        "camadas": "7 ou 9"
+      },
+      {
+        "espessura": "13mm",
+        "camadas": "5 ou 7"
+      },
+      {
+        "espessura": "11mm",
+        "camadas": "5"
+      },
+      {
+        "espessura": "9mm",
+        "camadas": "3 ou 5"
+      }
+    ]
+  },
+  {
+    "medida": "1,22m x 2,44m",
+    "processos": "2",
+    "espessuras": [
+      {
+        "espessura": "18mm",
+        "camadas": "9, 11 ou 13"
+      },
+      {
+        "espessura": "16mm",
+        "camadas": "7"
+      },
+      {
+        "espessura": "13mm",
+        "camadas": "5"
+      },
+      {
+        "espessura": "11mm",
+        "camadas": "5"
+      }
+    ]
+  }
+]

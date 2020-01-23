@@ -4,10 +4,11 @@ import {
     FacebookButton,
     GreenHeader, HeaderContainer, HeaderFilling,
     NavigationHeader,
-    TextoContato
+    TextoContato, WhatsappButton
 } from "./header.styles";
 
-import {faFacebookSquare} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 import HeaderButtonsComponent from "../header-buttons/header-buttons.component";
 import LogoComponent from "../logo/logo.component";
 
@@ -63,8 +64,8 @@ class HeaderComponent extends Component {
             <div>
                 <HeaderContainer topLen={this.state.topLen}>
                 <GreenHeader>
-                    <TextoContato>{'Telefone: '}{linkPhone(telefone)}{' | Vendas (Whatsapp): '}{linkPhone(celularVendedor)}{this.state.hideNav ? '' : ` | ${email}`}</TextoContato>
-                    <FacebookButton onClick={this.handleFacebookClick} icon={faFacebookSquare}/>
+                    <TextoContato>{'Telefone: '}{linkPhone(telefone)}{' | Vendas '}<WhatsappButton icon={faWhatsapp}/>{linkPhone(celularVendedor)}{this.state.hideNav ? '' : ` | ${email}`}</TextoContato>
+                    <FacebookButton onClick={this.handleFacebookClick} icon={faFacebook}/>
                 </GreenHeader>
                 <NavigationHeader id='navigationheader'>
                     <LogoComponent history={this.props.history}/>

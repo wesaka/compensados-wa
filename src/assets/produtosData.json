@@ -1,25 +1,17 @@
 [
   {
-    "title": "Lâminas de Pinus e Eucalipto",
-    "description": "Lâminas de Toras de Pinus Cozidas e Eucaliptos Laminados nas Bitolas de 1,0 a 3,9 mm.",
-    "characteristics": [
-      "Comprimento: 1.150 a 2.600mm.", "Larguras: de 200 a 1.950mm."
-    ],
-    "imgUrl": "/images/lamina-madeira.jpg"
-  },
-  {
     "title": "Compensados Plastificados",
-    "description": "Compensado naval plastificado, revestido com filme fenólico, produzido com colagem a prova d’água. Oferece garantia de grande número de reutilizações, desde que seguidas as instruções de uso e armazenamento.",
+    "description": "Compensado naval plastificado, revestido com filme fenólico, produzido com colagem a prova d’água produzido em um único processo de industrialização. Oferece garantia de grande número de reutilizações, desde que seguidas as instruções de uso e armazenamento.",
     "characteristics": [
-      "É utilizado na construção civil como fôrmas para concreto aparente, pilares, lages e vigas.", "Trabalhamos com as medidas de 2,20m x 1,10m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 10mm à 27mm.", "Garantimos a reutilização desde que se obedeçam aos critérios adequados conforme as normas técnicas da construção civil da ABNT."
+      "É utilizado na construção civil como formas para concreto aparente, pilares, lages e vigas.", "Garantimos a reutilização desde que se obedeçam aos critérios adequados conforme as normas técnicas da construção civil da ABNT.", "Atendemos pedidos para espessuras dentro de 9mm até 30mm, consulte-nos.", "Atendemos também pedidos de chapas de 1,10m x 2,20m para dois processos de fabricação, tanto nas espessuras e quantidade de camadas padrão, quanto especiais."
     ],
     "imgUrl": "/images/compensado_plastificado_atriunfo-2.jpg"
   },
   {
     "title": "Compensados Plastificados AntiDerrapantes",
-    "description": "Compensado naval plastificado produzido com colagem a prova d’água e uma das faces com textura anti derrapante.",
+    "description": "Compensado naval plastificado produzido com colagem a prova d’água e uma ou ambas faces com textura anti derrapante.",
     "characteristics": [
-      "Palcos, assoalhos para containers, passarelas, andaimes e pisos em geral.", "Trabalhamos com as medidas de 2,20m x 1,10m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 10mm à 27mm."
+      "Palcos, assoalhos para containers, passarelas, andaimes e pisos em geral.", "Trabalhamos com as comprimentos de 2,44m ou 2,60m e largura de 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 18mm a 30mm."
     ],
     "imgUrl": "/images/antiderrapante2.jpg"
   },
@@ -27,24 +19,32 @@
     "title": "Compensados Resinados",
     "description": "Compensado naval produzido com colagem a prova d’água, superfície tingida com tinta.",
     "characteristics": [
-      "É utilizado na construção civil como tapumes, bandejões, fôrmas de concreto não aparente e canteiro de obra.", "Trabalhamos com as medidas de 2,20m x 1,10m, 2,20m x 1,60m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 3,7mm à 27mm."
+      "É utilizado na construção civil como tapumes, bandejões, fôrmas de concreto não aparente e canteiro de obra.", "Trabalhamos com as medidas de 2,20m x 1,10m, 2,20m x 1,60m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 3,7mm a 30mm."
     ],
     "imgUrl": "/images/compensado-resinado.jpg"
   },
   {
     "title": "Compensados para Embalagens",
-    "description": "Compensados multilaminado, colado com laminas de madeira selecionada, sobrepostas em sentido alternado uma a uma; capa (lâminas externas) e miolo (lâminas internas) de lâminas torneadas, com capas no mesmo sentido, prensada a uma temperatura alta.",
+    "description": "Compensados multilaminado, colado com laminas de madeira selecionada; capa (lâminas externas) e miolo (lâminas internas) de lâminas torneadas, com capas num único sentido, prensada a uma alta temperatura.",
     "characteristics": [
-      "É utilizado para embalagens, colchões, mezaninos, divisórias, prateleiras, pallets, entre outros.", "Trabalhamos com as medidas de 2,20m x 1,10m, 2,20m x 1,60m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 3,7mm à 27mm."
+      "É utilizado para embalagens, colchões, mezaninos, divisórias, prateleiras, pallets, entre outros.", "Trabalhamos com as medidas de 2,20m x 1,10m, 2,20m x 1,60m ou 2,44m x 1,22m, ou medidas pré-definidas de acordo com as necessidades do cliente, nas espessuras de 7mm a 30mm."
     ],
     "imgUrl": "/images/compensados-embalagens.jpg"
   },
   {
     "title": "Painel Mezanino Cimentício",
-    "description": "Produto de alta resistência, produzido com painéis OSB, feita com colagem a prova d’água. Revestido com placa cimentícia em ambos os lados.",
+    "description": "Produto de alta resistência, produzido com compensado e painéis OSB, feita com colagem a prova d’água. Revestido com placa cimentícia em ambos os lados.",
     "characteristics": [
       "Trabalhamos com as medidas de 1,20m x 2,40m e 1,20m x 2,50m, nas espessuras de 23mm ou 40mm.", "Produto com garantia de qualidade.", "É utilizado para construção civil em geral."
     ],
     "imgUrl": "/images/mezanino-cimenticio.jpg"
+  },
+  {
+    "title": "Lâminas de Pinus e Eucalipto",
+    "description": "Lâminas de Toras de Pinus Cozidas e Eucaliptos Laminados",
+    "characteristics": [
+      "Espessura (Bitola): 1,0mm a 3,9mm.","Comprimento: 1,15m; 1,28m; 1,70m; 2,30; 2,52m; 2,60m.", "Larguras à especificação do cliente"
+    ],
+    "imgUrl": "/images/lamina-madeira.jpg"
   }
 ]

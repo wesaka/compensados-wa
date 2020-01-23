@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -22,11 +22,23 @@ export const GreenHeader = styled.div`
 `;
 
 export const TextoContato = styled.span`
+  font-weight: 500;
   flex-grow: 1;
-  margin: 10px 0;
+  letter-spacing: 0.5px;
+  margin: auto 0;
   color: white;
-  font-size: 12px;
-  transform: translateY(-20%);
+  font-size: 13px;
+  transform: translateY(-5%);
+`;
+
+export const WhatsappButton = styled(FontAwesomeIcon)`
+  width: 20px !important;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 6px;
+  color: white;
+  transform: translateY(18%);
 `;
 
 export const FacebookButton = styled(FontAwesomeIcon)`
@@ -41,6 +53,10 @@ export const FacebookButton = styled(FontAwesomeIcon)`
   &:hover {
     cursor: pointer;
     opacity: 0.7;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    display: none;
   }
 `;
 

@@ -20,6 +20,7 @@ export const ProdutoDivider = styled.hr`
 `;
 
 export const ProdutoSecondSection = styled.div`
+    padding-top: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -30,21 +31,13 @@ export const ProdutoSecondSection = styled.div`
 export const ProdutoImage = styled.img`
     width: 50vw;
     padding: 20px 5px;
-    flex: 1 1 60%;
+    max-height: 50vh;
+    flex: 1 1 65%;
     object-fit: scale-down;
     margin: 0 20px;
 `;
 
-const leftImageStyle = css`
-    padding-left: 10vw;
-`;
-
-const rightImageStyle = css`
-    padding-right: 10vw;
-`;
-
 export const ProdutoDescriptionContainer = styled.div`
-    ${({imgLeft}) => imgLeft ? leftImageStyle : rightImageStyle};
     text-align: left;
     flex: 1 1 30%;
 `;
@@ -58,6 +51,7 @@ export const ProdutoCharacteristicsItem = styled.div`
    display: flex;
    flex-direction: row;
    flex-wrap: nowrap;
+   margin: 15px 0;
 `;
 
 export const ProdutoCharacteristicsArrow = styled(FontAwesomeIcon)`
