@@ -7,12 +7,12 @@ export const ParallaxBaseDiv = styled.div`
     width: 100vw;
     z-index: -1;
     height: 100%;
-    background: url(${({background}) => background}) no-repeat center;
+    background: url(${({background}) => background}) no-repeat top;
 `;
 
 export const ParallaxTitle = styled.h1`
     position: fixed;
-    top: 38%;
+    top: 42%;
     left: 10vw;
     font-size: 60px;
     letter-spacing: .1em;

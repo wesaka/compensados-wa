@@ -1,4 +1,4 @@
-import React, {Component, createRef} from "react";
+import React, { Component } from "react";
 
 import ContatoForm from "../../components/contato-form/contato-form.component";
 import EnderecoComponent from "../../components/endereco/endereco.component";

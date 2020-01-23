@@ -6,14 +6,15 @@ import styled from "styled-components";
 export const FillerItemsContainer = styled.div`
     text-align: left;
     padding: 20px;
-    flex: 1 0 28%;
+    flex: 1 1 28%;
     width: 20%;
-    min-width: 20%;
+    min-width: 200px;
 `;
 
 export const FillerItemImage = styled.img`
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
 `;
 
 export const FillerItemTitle = styled.h3`

@@ -18,23 +18,13 @@ export const fillerPrincipios = [
 
 export const fillerSegmentos = [
     {
-        imgUrl: '/images/pallets.jpg',
-        title: 'Pallets',
+        imgUrl: '/images/predio.jpg',
+        title: 'Construção Civil',
         paragraph: ''
     },
     {
         imgUrl: '/images/embalagem-compensado.jpg',
         title: 'Embalagens',
-        paragraph: ''
-    },
-    {
-        imgUrl: '/images/moveleiro.jpg',
-        title: 'Móveis',
-        paragraph: ''
-    },
-    {
-        imgUrl: '/images/construcao-civil.jpg',
-        title: 'Construção Civil',
         paragraph: ''
     },
     {

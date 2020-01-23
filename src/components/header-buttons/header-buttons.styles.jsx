@@ -23,6 +23,8 @@ export const NavigationButton = styled(Link)`
   margin-right: 15px;
   text-decoration: none;
   color: inherit;
+  font-weight: 500;
+  letter-spacing: 1.2px;
   
   &:hover {
     cursor: pointer;

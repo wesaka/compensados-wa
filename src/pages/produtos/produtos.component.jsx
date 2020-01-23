@@ -18,7 +18,7 @@ class ProdutosPage extends Component{
     render() {
         return (
             <div>
-                <ParallaxHeaderComponent title='Produtos' background='/images/produto.jpg'/>
+                <ParallaxHeaderComponent title='Produtos' background='/images/016.jpg'/>
                 <ProdutosPageContainer>
                     {data.map((item, key) => (<ProdutoComponent index={key} key={uid(item)} {...item}/>))}
                 </ProdutosPageContainer>

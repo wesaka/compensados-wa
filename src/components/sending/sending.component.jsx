@@ -1,8 +1,6 @@
 import React from "react";
 import PulseLoader from "react-spinners/PulseLoader";
 import {SendingContainer} from "./sending.styles";
-import { css } from "@emotion/core"
-
 
 const SendingComponent = () => (
     <SendingContainer>
