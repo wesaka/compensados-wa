@@ -32,7 +32,7 @@ class ContatoPage extends Component {
         return (
             <div>
                 <MapFrame
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.0288147958895!2d-50.59704588497468!3d-25.235954431436507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e86475e142fec3%3A0x264e4c5588fd99f!2sR.%20Prof.%20Souza%20Araujo%2C%201500%2C%20Imbituva%20-%20PR%2C%2084430-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1578706316776!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.0286707323553!2d-50.59704588498969!3d-25.235959283878113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec2aaa053ef279f!2sCompensados%20e%20Laminados%20W.A.%20Ltda.!5e0!3m2!1sen!2sbr!4v1579800656456!5m2!1sen!2sbr"
                     frameBorder="0" allowFullScreen=""/>
                 <ContatoContainer>
                     <ContatoForm orcamento={this.state.orcamento} ref={c => this.contatoForm = c}/>
