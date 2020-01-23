@@ -7,7 +7,8 @@ export const BackgroundContainer = styled.div`
     width: 100vw;
     background-image: url(${({url}) => url});
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-size: cover;
 `;
 
 export const Slide = styled.div`

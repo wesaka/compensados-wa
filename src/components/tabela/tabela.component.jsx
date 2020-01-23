@@ -10,7 +10,7 @@ const TabelaComponent = () => (
         {rawData.map(item => {
             const titulo = `Chapas de ${item.medida} produzidas em ${item.processos} Etapa${parseInt(item.processos) > 1 ? "s" : ""}`;
             const dados = [];
-            item.espessuras.forEach(valor => dados.push({Espessura: valor.espessura, Camadas: valor.camadas}));
+            item.espessuras.forEach(valor => dados.push({Espessura: valor.espessura, "Camadas Fabricadas": valor.camadas}));
 
             return (
                 <TabelaIndividual>

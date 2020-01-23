@@ -7,7 +7,7 @@ export const ParallaxBaseDiv = styled.div`
     width: 100vw;
     z-index: -1;
     height: 100%;
-    background: url(${({background}) => background}) no-repeat bottom;
+    background: url(${({background}) => background}) no-repeat top;
     background-size: cover;
 `;
 

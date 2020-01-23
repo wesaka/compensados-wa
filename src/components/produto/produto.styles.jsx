@@ -30,10 +30,10 @@ export const ProdutoSecondSection = styled.div`
 
 export const ProdutoImage = styled.img`
     width: 50vw;
-    padding: 20px 5px;
+    padding: 20px 50px;
     max-height: 50vh;
     flex: 1 1 65%;
-    object-fit: scale-down;
+    object-fit: cover;
     margin: 0 20px;
 `;
 

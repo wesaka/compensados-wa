@@ -25,7 +25,7 @@ class HomePage extends Component {
                             <CarouselButton to='/empresa' color='#53d65a'>CONHEÇA A W.A.</CarouselButton>
                         </Slide>
                     </BackgroundContainer>
-                    <BackgroundContainer url="/images/produto.jpg">
+                    <BackgroundContainer url="/images/016.jpg">
                         <Slide>
                             <Tagline>Conheça a nossa linha de produtos</Tagline>
                             <CarouselButton to='/produtos' color='dodgerblue'>SAIBA MAIS</CarouselButton>
