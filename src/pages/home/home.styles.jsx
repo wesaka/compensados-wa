@@ -47,5 +47,5 @@ export const CarouselButton = styled(Link)`
 export const Spacer = styled.div`
     height: 50px;
     width: 100vw;
-    opacity: 0;
+    background: white;
 `;
