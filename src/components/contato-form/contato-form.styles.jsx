@@ -47,7 +47,7 @@ export const InputBig = styled.textarea`
 export const ButtonContato = styled.div`
     width: 200px;
     height: 45px;
-    background: #9fd150;
+    background: #C5A27A;
     margin: 1em;
     border-radius: 2px;
     color: white;

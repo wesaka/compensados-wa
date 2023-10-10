@@ -9,7 +9,7 @@ import SectionTitleComponent from "../section-title/section-title.component";
 
 const HistoriaComponent = () => (
     <HistoriaContainer>
-        <Logo src='/images/logo-grande.png'/>
+        <Logo src='images/logowa_colorida_sembg.png'/>
         <HistoriaTextContainer>
             <SectionTitleComponent title='Nossa história'/>
             <HistoriaParagraph>

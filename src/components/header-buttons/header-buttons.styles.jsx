@@ -11,7 +11,7 @@ export const HeaderButtonsContainer = styled.div`
 export const NavigationAccent = styled.div`
   height: 3px;
   width: 100%;
-  background: #9fd150;
+  background: #C5A27A;
   opacity: 0;
   margin-top: 2px;
   z-index: 1;

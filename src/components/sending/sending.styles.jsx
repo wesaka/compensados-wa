@@ -13,7 +13,7 @@ const animateMessage = keyframes`
 export const SendingContainer = styled.div`
     width: 300px;
     height: 45px;
-    background: #9fd150;
+    background: #C5A27A;
     margin: 1em auto;
     border-radius: 2px;
     color: white;

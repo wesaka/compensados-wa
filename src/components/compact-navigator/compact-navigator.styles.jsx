@@ -4,10 +4,10 @@ import { Dropdown } from "semantic-ui-react";
 
 export const NavigationDropdown = styled(Dropdown)`
   font-size: 28px;
-  color: #9fd150;
+  color: #c5a27a;
   position: relative;
-  
-  & :hover{
+
+  & :hover {
     cursor: pointer;
   }
 `;

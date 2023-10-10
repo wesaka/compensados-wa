@@ -11,7 +11,6 @@ export const HistoriaContainer = styled.div`
 
 export const Logo = styled.img`
     width: 228px;
-    height: 182px;
     max-width: 800px;
     min-width: 228px;
     flex: 0 0 20%;

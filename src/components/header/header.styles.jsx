@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const GreenHeader = styled.div`
-  background: #9fd150;
+  background: #C5A27A;
   vertical-align: center;
   display: flex;
   flex-direction: row;

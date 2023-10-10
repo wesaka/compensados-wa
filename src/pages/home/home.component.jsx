@@ -22,13 +22,13 @@ class HomePage extends Component {
                     <BackgroundContainer url="/images/10-anos-experiencia.jpg">
                         <Slide>
                             <Tagline>Mais de 10 anos de experência</Tagline>
-                            <CarouselButton to='/empresa' color='#53d65a'>CONHEÇA A W.A.</CarouselButton>
+                            <CarouselButton to='/empresa' color='#C5A27A'>CONHEÇA A W.A.</CarouselButton>
                         </Slide>
                     </BackgroundContainer>
                     <BackgroundContainer url="/images/016.jpg">
                         <Slide>
                             <Tagline>Conheça a nossa linha de produtos</Tagline>
-                            <CarouselButton to='/produtos' color='dodgerblue'>SAIBA MAIS</CarouselButton>
+                            <CarouselButton to='/produtos' color='#C5A27A'>SAIBA MAIS</CarouselButton>
                         </Slide>
                     </BackgroundContainer>
                 </SliderComponent>
