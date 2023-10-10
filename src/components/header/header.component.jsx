@@ -1,20 +1,22 @@
 import React, {Component} from "react";
 import { withRouter } from 'react-router-dom';
+
 import {
     FacebookButton,
     GreenHeader, HeaderContainer, HeaderFilling,
     NavigationHeader,
-    TextoContato, WhatsappButton
+    TextoContato
 } from "./header.styles";
 
-import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 import HeaderButtonsComponent from "../header-buttons/header-buttons.component";
 import LogoComponent from "../logo/logo.component";
 
-import {telefone, celularVendedor, email} from '../../assets/data';
+import {telefone, email} from '../../assets/data';
 import { linkPhone } from "../../utils/phone.utils";
 import CompactNavigator from "../compact-navigator/compact-navigator.component";
+import WhatsappContactComponent from "../whatsapp-button/whatsapp-contact.component";
 
 class HeaderComponent extends Component {
     constructor(props) {
@@ -64,7 +66,7 @@ class HeaderComponent extends Component {
             <div>
                 <HeaderContainer topLen={this.state.topLen}>
                 <GreenHeader>
-                    <TextoContato>{'Telefone: '}{linkPhone(telefone)}{' | Vendas '}<WhatsappButton icon={faWhatsapp}/>{linkPhone(celularVendedor)}{this.state.hideNav ? '' : ` | ${email}`}</TextoContato>
+                    <TextoContato>{'Telefone: '}{linkPhone(telefone)}{' | Vendas '}<WhatsappContactComponent />{this.state.hideNav ? '' : ` | ${email}`}</TextoContato>
                     <FacebookButton onClick={this.handleFacebookClick} icon={faFacebook}/>
                 </GreenHeader>
                 <NavigationHeader id='navigationheader'>

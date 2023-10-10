@@ -31,16 +31,6 @@ export const TextoContato = styled.span`
   transform: translateY(-5%);
 `;
 
-export const WhatsappButton = styled(FontAwesomeIcon)`
-  width: 20px !important;
-  height: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 6px;
-  color: white;
-  transform: translateY(18%);
-`;
-
 export const FacebookButton = styled(FontAwesomeIcon)`
   display: block;
   height: 24px;
