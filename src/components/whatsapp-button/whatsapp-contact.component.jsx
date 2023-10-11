@@ -6,7 +6,7 @@ import {celularVendedor} from '../../assets/data';
 
 const WhatsappContactComponent = () => {
     const number = '+5542991274008';
-    const message = 'Olá! Tenho interesse em mais informações. Poderia me ajudar?\n';
+    const message = 'Olá! Venho pelo link de Whatsapp do site e tenho interesse em mais informações. Poderia me ajudar?\n';
 
     return (
         <span onClick={() => window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, '_blank')}>
